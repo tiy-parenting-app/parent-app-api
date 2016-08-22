@@ -2,15 +2,14 @@
 
 const Hash = use('Hash');
 const User = use('App/Model/User');
-const attributes = ['username', 'email', 'password'];
+const attributes = ['email', 'password'];
 
 class UserController {
 
   * store(request, response) {
-    const { email, username, password } = request.jsonApi.getAttributesSnakeCase(attributes);
+    const { email, password } = request.jsonApi.getAttributesSnakeCase(attributes);
     const user = yield User.create({
       email,
-      username,
       password: yield Hash.make(password),
     });
 
@@ -31,7 +30,7 @@ class UserController {
     const input = request.jsonApi.getAttributesSnakeCase(attributes);
 
     const user = yield User.with().where({ id }).firstOrFail();
-    yield user.update(input));
+    yield user.update(input);
 
     response.jsonApi('User', user);
   }
