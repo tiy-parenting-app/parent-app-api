@@ -11,14 +11,14 @@ class ProfileSchema extends Schema {
       table.string('userPicUrl');
       table.string('firstName');
       table.string('lastName');
-      table.textfield('userBlurb');
+      table.text('userBlurb');
       table.string('location');
       table.integer('rating');
       table.boolean('isLiked');
       table.integer('sitterRate');
       table.string('lookingFor');
       table.string('phoneNumber');
-      table.textfield('userAbout');
+      table.text('userAbout');
       table.boolean('numberIsSecret');
       table.boolean('isConnected');
       table.boolean('childIsUnlocked');
