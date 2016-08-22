@@ -24,7 +24,8 @@
       "dependencies": {
         "acorn": {
           "version": "3.3.0",
-          "from": "acorn@>=3.0.4 <4.0.0"
+          "from": "acorn@3.3.0",
+          "resolved": "https://registry.npmjs.org/acorn/-/acorn-3.3.0.tgz"
         }
       }
     },
@@ -73,9 +74,9 @@
       }
     },
     "adonis-generators": {
-      "version": "0.2.0",
-      "from": "adonis-generators@latest",
-      "resolved": "https://registry.npmjs.org/adonis-generators/-/adonis-generators-0.2.0.tgz"
+      "version": "0.4.3",
+      "from": "adonis-generators@0.4.3",
+      "resolved": "https://registry.npmjs.org/adonis-generators/-/adonis-generators-0.4.3.tgz"
     },
     "adonis-jsonapi": {
       "version": "0.3.0",
@@ -90,9 +91,9 @@
       }
     },
     "adonis-lucid": {
-      "version": "3.0.3",
-      "from": "adonis-lucid@3.0.3",
-      "resolved": "https://registry.npmjs.org/adonis-lucid/-/adonis-lucid-3.0.3.tgz"
+      "version": "3.0.4",
+      "from": "adonis-lucid@3.0.4",
+      "resolved": "https://registry.npmjs.org/adonis-lucid/-/adonis-lucid-3.0.4.tgz"
     },
     "adonis-middleware": {
       "version": "1.0.7",
@@ -740,7 +741,8 @@
         },
         "minimist": {
           "version": "0.0.8",
-          "from": "minimist@0.0.8"
+          "from": "minimist@0.0.8",
+          "resolved": "https://registry.npmjs.org/minimist/-/minimist-0.0.8.tgz"
         },
         "mkdirp": {
           "version": "0.5.1",
@@ -766,7 +768,8 @@
     },
     "eslint-config-rtablada": {
       "version": "3.1.0",
-      "from": "eslint-config-rtablada@latest"
+      "from": "eslint-config-rtablada@3.1.0",
+      "resolved": "https://registry.npmjs.org/eslint-config-rtablada/-/eslint-config-rtablada-3.1.0.tgz"
     },
     "eslint-import-resolver-node": {
       "version": "0.2.2",
@@ -1618,7 +1621,8 @@
       "dependencies": {
         "glob": {
           "version": "7.0.5",
-          "from": "glob@>=7.0.3 <8.0.0"
+          "from": "glob@7.0.5",
+          "resolved": "https://registry.npmjs.org/glob/-/glob-7.0.5.tgz"
         }
       }
     },
@@ -2403,9 +2407,9 @@
       "resolved": "https://registry.npmjs.org/node-uuid/-/node-uuid-1.4.7.tgz"
     },
     "nodemon": {
-      "version": "1.10.0",
-      "from": "nodemon@>=1.9.1 <2.0.0",
-      "resolved": "https://registry.npmjs.org/nodemon/-/nodemon-1.10.0.tgz"
+      "version": "1.10.2",
+      "from": "nodemon@1.10.2",
+      "resolved": "https://registry.npmjs.org/nodemon/-/nodemon-1.10.2.tgz"
     },
     "nopt": {
       "version": "1.0.10",
@@ -3227,14 +3231,15 @@
         },
         "mkdirp": {
           "version": "0.5.1",
-          "from": "mkdirp@>=0.5.1 <0.6.0"
+          "from": "mkdirp@0.5.1",
+          "resolved": "https://registry.npmjs.org/mkdirp/-/mkdirp-0.5.1.tgz"
         }
       }
     },
     "write-file-atomic": {
-      "version": "1.1.4",
+      "version": "1.2.0",
       "from": "write-file-atomic@>=1.1.2 <2.0.0",
-      "resolved": "https://registry.npmjs.org/write-file-atomic/-/write-file-atomic-1.1.4.tgz"
+      "resolved": "https://registry.npmjs.org/write-file-atomic/-/write-file-atomic-1.2.0.tgz"
     },
     "xdg-basedir": {
       "version": "2.0.0",
