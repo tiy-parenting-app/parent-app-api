@@ -1,12 +1,12 @@
 'use strict';
 
 const Profile = use('App/Model/Profile');
-const attributes = ['isParent', 'userPicUrl', 'firstName', 'lastName', 'userBlurb', 'location', 'rating', 'isLiked', 'sitterRate', 'lookingFor', 'phoneNumber', 'userAbout', 'numberIsSecret', 'isConnected', 'childIsUnlocked'];
+const attributes = ['is-parent', 'user-pic-url', 'first-name', 'last-name', 'user-blurb', 'location', 'rating', 'is-liked', 'sitter-rate', 'looking-for', 'phone-number', 'user-about', 'number-is-secret', 'is-connected', 'child-is-unlocked'];
 
 class ProfileController {
 
   * index(request, response) {
-    const profiles = yield Profile.with().fetch();
+    const profiles = yield Profile.with('user').fetch();
 
     response.jsonApi('Profile', profiles);
   }
@@ -14,6 +14,7 @@ class ProfileController {
   * store(request, response) {
     const input = request.jsonApi.getAttributesSnakeCase(attributes);
     const foreignKeys = {
+      user_id: user,
     };
     const profile = yield Profile.create(Object.assign({}, input, foreignKeys));
 
@@ -22,7 +23,7 @@ class ProfileController {
 
   * show(request, response) {
     const id = request.param('id');
-    const profile = yield Profile.with().where({ id }).firstOrFail();
+    const profile = yield Profile.with('user').where({ id }).firstOrFail();
 
     response.jsonApi('Profile', profile);
   }
@@ -33,9 +34,10 @@ class ProfileController {
 
     const input = request.jsonApi.getAttributesSnakeCase(attributes);
     const foreignKeys = {
+      user_id: user,
     };
 
-    const profile = yield Profile.with().where({ id }).firstOrFail();
+    const profile = yield Profile.with('user').where({ id }).firstOrFail();
     yield profile.update(Object.assign({}, input, foreignKeys));
 
     response.send(profile);
