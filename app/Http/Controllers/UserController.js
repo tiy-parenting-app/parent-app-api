@@ -16,6 +16,13 @@ class UserController {
     response.jsonApi('User', user);
   }
 
+  * current(request, response) {
+    const user = request.authUser;
+    yield user.related('profile').load();
+
+    response.jsonApi('User', user);
+  }
+
   * show(request, response) {
     const id = request.param('id');
     const user = yield User.with().where({ id }).firstOrFail();
