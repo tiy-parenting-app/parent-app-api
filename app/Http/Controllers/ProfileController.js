@@ -1,7 +1,22 @@
 'use strict';
 
 const Profile = use('App/Model/Profile');
-const attributes = ['is-parent', 'user-pic-url', 'first-name', 'last-name', 'user-blurb', 'location', 'rating', 'is-liked', 'sitter-rate', 'looking-for', 'phone-number', 'user-about', 'number-is-secret', 'is-connected', 'child-is-unlocked'];
+const attributes = [
+  'is-parent',
+  'user-pic-url',
+  'first-name',
+  'last-name',
+  'user-blurb',
+  'location',
+  'is-liked',
+  'sitter-rate',
+  'looking-for',
+  'phone-number',
+  'user-about',
+  'number-is-secret',
+  'is-connected',
+  'child-is-unlocked',
+];
 
 class ProfileController {
 
@@ -14,7 +29,7 @@ class ProfileController {
   * store(request, response) {
     const input = request.jsonApi.getAttributesSnakeCase(attributes);
     const foreignKeys = {
-      user_id: user,
+      user_id: request.authUser.id,
     };
     const profile = yield Profile.create(Object.assign({}, input, foreignKeys));
 
@@ -33,12 +48,9 @@ class ProfileController {
     request.jsonApi.assertId(id);
 
     const input = request.jsonApi.getAttributesSnakeCase(attributes);
-    const foreignKeys = {
-      user_id: user,
-    };
 
     const profile = yield Profile.with('user').where({ id }).firstOrFail();
-    yield profile.update(Object.assign({}, input, foreignKeys));
+    yield profile.update(Object.assign({}, input));
 
     response.send(profile);
   }
