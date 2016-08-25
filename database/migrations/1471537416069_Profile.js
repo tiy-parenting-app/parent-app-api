@@ -13,9 +13,8 @@ class ProfileSchema extends Schema {
       table.string('last_name');
       table.text('user_blurb');
       table.string('location');
-      table.integer('rating');
       table.boolean('is_liked');
-      table.integer('sitter_rate');
+      table.string('sitter_rate');
       table.string('looking_for');
       table.string('phone_number');
       table.text('user_about');
