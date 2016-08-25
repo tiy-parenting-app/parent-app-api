@@ -5,12 +5,12 @@ class Conversation extends JsonApiView {
     return [];
   }
 
-  message() {
-    return this.hasMany('App/Http/JsonApiViews/Message', true);
+  messages() {
+    return this.hasMany('App/Http/JsonApiViews/Message', false);
   }
 
-  participant() {
-    return this.hasMany('App/Http/JsonApiViews/Participant', true);
+  participants() {
+    return this.hasMany('App/Http/JsonApiViews/Participant', false);
   }
 }
 

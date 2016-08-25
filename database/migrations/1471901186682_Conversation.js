@@ -7,8 +7,8 @@ class ConversationSchema extends Schema {
   up() {
     this.create('conversations', (table) => {
       table.increments();
-      
-      
+
+
       table.timestamps();
     });
   }
