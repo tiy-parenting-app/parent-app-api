@@ -5,16 +5,14 @@ const Conversation = use('App/Model/Conversation');
 class ConversationController {
 
   * index(request, response) {
-    const conversations = yield Conversation.with('message', 'participant').fetch();
+    const user = request.authUser;
+    const conversations = yield user.conversations().with('participants').fetch();
 
     response.jsonApi('Conversation', conversations);
   }
 
   * store(request, response) {
-    const input = request.jsonApi.getAttributesSnakeCase(attributes);
-    const foreignKeys = {
-    };
-    const conversation = yield Conversation.create(Object.assign({}, input, foreignKeys));
+    const conversation = yield Conversation.create();
 
     response.jsonApi('Conversation', conversation);
   }

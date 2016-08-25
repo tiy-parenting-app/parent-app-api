@@ -36,3 +36,5 @@ Route.post('/token', 'SessionController.store');
 
 Route.get('/users/current', 'UserController.current').middleware('auth');
 Route.resource('/profiles', 'ProfileController').except(['create', 'edit']).middleware('auth');
+Route.resource('/conversations', 'ConversationController')
+  .except(['create', 'edit']).middleware('auth');
