@@ -6,8 +6,12 @@ class Child extends JsonApiView {
   }
 
   profile() {
-    return this.belongsTo('App/Http/JsonApiViews/Profile', true);
+    return this.belongsTo('App/Http/JsonApiViews/Profile', {
+      included: true,
+      excludeRelation: 'children'
+    });
   }
+
 }
 
 module.exports = Child;
