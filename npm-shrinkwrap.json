@@ -74,14 +74,14 @@
       }
     },
     "adonis-generators": {
-      "version": "0.4.3",
-      "from": "adonis-generators@0.4.3",
-      "resolved": "https://registry.npmjs.org/adonis-generators/-/adonis-generators-0.4.3.tgz"
+      "version": "0.4.7",
+      "from": "adonis-generators@0.4.7",
+      "resolved": "https://registry.npmjs.org/adonis-generators/-/adonis-generators-0.4.7.tgz"
     },
     "adonis-jsonapi": {
-      "version": "0.3.0",
-      "from": "adonis-jsonapi@latest",
-      "resolved": "https://registry.npmjs.org/adonis-jsonapi/-/adonis-jsonapi-0.3.0.tgz",
+      "version": "0.4.1",
+      "from": "adonis-jsonapi@0.4.1",
+      "resolved": "https://registry.npmjs.org/adonis-jsonapi/-/adonis-jsonapi-0.4.1.tgz",
       "dependencies": {
         "node-exceptions": {
           "version": "1.0.3",
