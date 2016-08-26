@@ -36,5 +36,15 @@ Route.post('/token', 'SessionController.store');
 
 Route.get('/users/current', 'UserController.current').middleware('auth');
 Route.resource('/profiles', 'ProfileController').except(['create', 'edit']).middleware('auth');
+
+Route.resource('/users', 'UserController')
+  .except(['create', 'edit']).middleware('auth');
+
 Route.resource('/conversations', 'ConversationController')
+  .except(['create', 'edit']).middleware('auth');
+
+Route.resource('/participants', 'ParticipantController')
+  .except(['create', 'edit']).middleware('auth');
+
+Route.resource('/messages', 'MessageController')
   .except(['create', 'edit']).middleware('auth');

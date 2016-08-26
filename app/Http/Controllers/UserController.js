@@ -6,6 +6,15 @@ const attributes = ['email', 'password'];
 
 class UserController {
 
+  * show(request, response) {
+    const id = request.param('id');
+    const user = yield User.with('profile').where({ id }).firstOrFail();
+
+    console.log(user.toJSON());
+
+    response.jsonApi('User', user);
+  }
+
   * store(request, response) {
     const { email, password } = request.jsonApi.getAttributesSnakeCase(attributes);
     const user = yield User.create({
@@ -19,13 +28,6 @@ class UserController {
   * current(request, response) {
     const user = request.authUser;
     yield user.related('profile').load();
-
-    response.jsonApi('User', user);
-  }
-
-  * show(request, response) {
-    const id = request.param('id');
-    const user = yield User.with().where({ id }).firstOrFail();
 
     response.jsonApi('User', user);
   }
