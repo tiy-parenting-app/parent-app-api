@@ -1,16 +1,18 @@
-'use strict'
+'use strict';
 
-const Lucid = use('Lucid')
+const Lucid = use('Lucid');
 
 class Message extends Lucid {
 
-
-  participant() {
-    return this.belongsTo('App/Model/Participant', 'id', 'participant_id');
+  messages() {
+    return this.hasMany('App/Model/Message', 'id', 'conversation_id');
   }
   conversation() {
     return this.belongsTo('App/Model/Conversation', 'id', 'conversation_id');
   }
+  participants() {
+    return this.hasMany('App/Model/Participant', 'id', 'conversation_id');
+  }
 }
 
-module.exports = Message
+module.exports = Message;

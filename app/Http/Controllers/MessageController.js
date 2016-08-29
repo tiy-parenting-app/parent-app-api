@@ -1,3 +1,4 @@
+
 'use strict';
 
 const Message = use('App/Model/Message');
