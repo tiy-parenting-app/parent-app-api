@@ -2,19 +2,16 @@
 
 const Profile = use('App/Model/Profile');
 const attributes = [
-  'is-parent',
   'user-pic-url',
   'first-name',
   'last-name',
   'user-blurb',
   'location',
-  'is-liked',
   'sitter-rate',
   'looking-for',
   'phone-number',
   'user-about',
   'number-is-secret',
-  'is-connected',
   'child-is-unlocked',
 ];
 
@@ -50,7 +47,8 @@ class ProfileController {
     const input = request.jsonApi.getAttributesSnakeCase(attributes);
 
     const profile = yield Profile.with('user').where({ id }).firstOrFail();
-    yield profile.update(Object.assign({}, input));
+    profile.fill(input);
+    yield profile.save();
 
     response.jsonApi('Profile', profile);
   }

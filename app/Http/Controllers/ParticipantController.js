@@ -40,7 +40,8 @@ class ParticipantController {
     };
 
     const participant = yield Participant.with('messages', 'conversation', 'user').where({ id }).firstOrFail();
-    yield participant.update(Object.assign({}, input, foreignKeys));
+    participant.fill(Object.assign({}, input, foreignKeys));
+    yield participant.save();
 
     response.jsonApi('Participant', participant);
   }
