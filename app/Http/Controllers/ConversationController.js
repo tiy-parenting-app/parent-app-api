@@ -32,8 +32,11 @@ class ConversationController {
     const foreignKeys = {
     };
 
-    const conversation = yield Conversation.with('participants.user', 'messages').where({ id }).firstOrFail();
-    yield conversation.update(Object.assign({}, input, foreignKeys));
+    const conversation = yield Conversation.with('participants.user', 'messages')
+      .where({ id }).firstOrFail();
+
+    conversation.fill(Object.assign({}, input, foreignKeys));
+    conversation.save();
 
     response.jsonApi('Conversation', conversation);
   }

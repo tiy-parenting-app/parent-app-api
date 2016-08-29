@@ -16,11 +16,13 @@ class UserController {
   }
 
   * store(request, response) {
-    const { email, password } = request.jsonApi.getAttributesSnakeCase(attributes);
+    const { email, password, account_type } = request.jsonApi.getAttributesSnakeCase(attributes);
     const user = yield User.create({
+      account_type,
       email,
       password: yield Hash.make(password),
     });
+    yield user.profile().create();
 
     response.jsonApi('User', user);
   }
@@ -39,7 +41,8 @@ class UserController {
     const input = request.jsonApi.getAttributesSnakeCase(attributes);
 
     const user = yield User.with().where({ id }).firstOrFail();
-    yield user.update(input);
+    user.fill(input);
+    user.save();
 
     response.jsonApi('User', user);
   }
