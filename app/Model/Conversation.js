@@ -5,7 +5,7 @@ const Lucid = use('Lucid');
 class Conversation extends Lucid {
 
 
-  message() {
+  messages() {
     return this.hasMany('App/Model/Message', 'id', 'conversation_id');
   }
   participants() {

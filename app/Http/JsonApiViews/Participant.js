@@ -7,14 +7,14 @@ class Participant extends JsonApiView {
 
   messages() {
     return this.hasMany('App/Http/JsonApiViews/Message', {
-      included: true,
+      included: false,
       excludeRelation: 'participant',
     });
   }
 
   conversation() {
     return this.hasMany('App/Http/JsonApiViews/Conversation', {
-      included: true,
+      included: false,
       excludeRelation: 'participant',
     });
   }
