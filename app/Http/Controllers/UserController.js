@@ -2,7 +2,7 @@
 
 const Hash = use('Hash');
 const User = use('App/Model/User');
-const attributes = ['email', 'password'];
+const attributes = ['email', 'password', 'account-type'];
 
 class UserController {
 

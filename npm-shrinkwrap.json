@@ -44,6 +44,11 @@
       "from": "adonis-commands@2.1.0",
       "resolved": "https://registry.npmjs.org/adonis-commands/-/adonis-commands-2.1.0.tgz"
     },
+    "adonis-filesystem": {
+      "version": "0.2.0",
+      "from": "adonis-filesystem@latest",
+      "resolved": "https://registry.npmjs.org/adonis-filesystem/-/adonis-filesystem-0.2.0.tgz"
+    },
     "adonis-fold": {
       "version": "3.0.2",
       "from": "adonis-fold@3.0.2",
@@ -3071,6 +3076,11 @@
       "version": "2.3.8",
       "from": "through@>=2.3.6 <3.0.0",
       "resolved": "https://registry.npmjs.org/through/-/through-2.3.8.tgz"
+    },
+    "thunkify": {
+      "version": "2.1.2",
+      "from": "thunkify@>=2.1.2 <3.0.0",
+      "resolved": "https://registry.npmjs.org/thunkify/-/thunkify-2.1.2.tgz"
     },
     "thunkify-wrap": {
       "version": "1.0.4",
