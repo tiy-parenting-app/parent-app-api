@@ -40,7 +40,7 @@ class RatingController {
     const rating = yield Rating.with('profile').where({ id }).firstOrFail();
     yield rating.update(Object.assign({}, input, foreignKeys));
 
-    response.send(rating);
+    response.jsonApi('Rating', rating);
   }
 
   * destroy(request, response) {

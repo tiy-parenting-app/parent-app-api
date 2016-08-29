@@ -52,7 +52,7 @@ class ProfileController {
     const profile = yield Profile.with('user').where({ id }).firstOrFail();
     yield profile.update(Object.assign({}, input));
 
-    response.send(profile);
+    response.jsonApi('Profile', profile);
   }
 
   * destroy(request, response) {
