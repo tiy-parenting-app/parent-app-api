@@ -40,7 +40,7 @@ class ChildController {
     const child = yield Child.with('profile').where({ id }).firstOrFail();
     yield child.update(Object.assign({}, input, foreignKeys));
 
-    response.send(child);
+    response.jsonApi('Child', child);
   }
 
   * destroy(request, response) {

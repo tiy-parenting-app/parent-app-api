@@ -42,7 +42,7 @@ class MessageController {
     const message = yield Message.with('participant', 'conversation').where({ id }).firstOrFail();
     yield message.update(Object.assign({}, input, foreignKeys));
 
-    response.send(message);
+    response.jsonApi('Message', message);
   }
 
   * destroy(request, response) {
