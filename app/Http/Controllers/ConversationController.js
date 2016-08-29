@@ -6,8 +6,9 @@ class ConversationController {
 
   * index(request, response) {
     const user = request.authUser;
-    const conversations = yield user.conversations().with('participants.user', 'messages').fetch();
-
+    const conversations = yield user.conversations()
+      .with('participants.user', 'messages.participant').fetch();
+    response.send(conversations);
     response.jsonApi('Conversation', conversations);
   }
 
@@ -19,7 +20,8 @@ class ConversationController {
 
   * show(request, response) {
     const id = request.param('id');
-    const conversation = yield Conversation.with('participants.user', 'messages').where({ id }).firstOrFail();
+    const conversation = yield Conversation.with('participants.user', 'messages.participant')
+      .where({ id }).firstOrFail();
 
     response.jsonApi('Conversation', conversation);
   }
