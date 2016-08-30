@@ -29,6 +29,7 @@ const providers = [
   'adonis-middleware/providers/AppMiddlewareProvider',
   'adonis-auth/providers/AuthManagerProvider',
   'adonis-jsonapi/providers/JsonApiProvider',
+  'adonis-filesystem/providers/FilesystemProvider',
 ];
 
 /*
@@ -76,6 +77,7 @@ const aliases = {
   Route: 'Adonis/Src/Route',
   Schema: 'Adonis/Src/Schema',
   View: 'Adonis/Src/View',
+  File: 'AdonisFilesystem/Filesystem',
 };
 
 /*

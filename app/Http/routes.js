@@ -35,7 +35,19 @@ Route.post('/users', 'UserController.store');
 Route.post('/token', 'SessionController.store');
 
 Route.get('/users/current', 'UserController.current').middleware('auth');
-Route.resource('/profiles', 'ProfileController').except(['create', 'edit']).middleware('auth');
+
+Route.resource('/profiles', 'ProfileController')
+  .except(['create', 'edit', 'update'])
+  .middleware('auth');
+Route.resource('/profiles', 'ProfileController')
+  .only(['update'])
+  .middleware('auth')
+  .formats(['json'], true);
+Route.put('/profiles/:id', 'ProfileController')
+  .middleware('auth');
+Route.patch('/profiles/:id', 'ProfileController.updateUpload')
+  .middleware('auth');
+
 Route.resource('/children', 'ChildController').except(['create', 'edit']).middleware('auth');
 
 Route.resource('/users', 'UserController')

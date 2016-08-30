@@ -1,5 +1,5 @@
 'use strict';
-
+const snakeCaseKeys = require('snakecase-keys');
 const Profile = use('App/Model/Profile');
 const attributes = [
   'user-pic-url',
@@ -14,6 +14,7 @@ const attributes = [
   'number-is-secret',
   'child-is-unlocked',
 ];
+const File = use('File');
 
 class ProfileController {
 
@@ -48,6 +49,26 @@ class ProfileController {
 
     const profile = yield Profile.with('user', 'children').where({ id }).firstOrFail();
     profile.fill(input);
+    yield profile.save();
+
+    response.jsonApi('Profile', profile);
+  }
+
+  * updateUpload(request, response) {
+    const id = request.param('id');
+    const attrs = snakeCaseKeys(request.all());
+
+    const profilePic = request.file('uploadFile', {
+        maxSize: '10mb',
+        allowedExtensions: ['jpg', 'png', 'jpeg']
+    });
+
+    yield File.upload(profilePic.clientName(), profilePic);
+
+    attrs.user_pic_url = `/uploads/${profilePic.clientName()}`;
+
+    const profile = yield Profile.with('user', 'children').where({ id }).firstOrFail();
+    profile.fill(attrs);
     yield profile.save();
 
     response.jsonApi('Profile', profile);
