@@ -6,7 +6,7 @@ const attributes = ['value'];
 class RatingController {
 
   * index(request, response) {
-    const ratings = yield Rating.with('profile').fetch();
+    const ratings = yield request.authUser.ratings().fetch();
 
     response.jsonApi('Rating', ratings);
   }
@@ -14,7 +14,8 @@ class RatingController {
   * store(request, response) {
     const input = request.jsonApi.getAttributesSnakeCase(attributes);
     const foreignKeys = {
-      profile_id: profile,
+      profile_id: request.input('data.relationships.profile.data.id'),
+      user_id: request.authUser.id,
     };
     const rating = yield Rating.create(Object.assign({}, input, foreignKeys));
 
@@ -23,7 +24,8 @@ class RatingController {
 
   * show(request, response) {
     const id = request.param('id');
-    const rating = yield Rating.with('profile').where({ id }).firstOrFail();
+    const userId = request.authUser.id;
+    const rating = yield Rating.with('profile').where({ id, user_id: userId }).firstOrFail();
 
     response.jsonApi('Rating', rating);
   }
@@ -34,10 +36,12 @@ class RatingController {
 
     const input = request.jsonApi.getAttributesSnakeCase(attributes);
     const foreignKeys = {
-      profile_id: profile,
+      profile_id: request.input('data.relationships.profile.data.id'),
+      user_id: request.authUser.id,
     };
 
-    const rating = yield Rating.with('profile').where({ id }).firstOrFail();
+    const userId = request.authUser.id;
+    const rating = yield Rating.with('profile').where({ id, user_id: userId }).firstOrFail();
     yield rating.update(Object.assign({}, input, foreignKeys));
 
     response.jsonApi('Rating', rating);
@@ -46,7 +50,8 @@ class RatingController {
   * destroy(request, response) {
     const id = request.param('id');
 
-    const rating = yield Rating.query().where({ id }).firstOrFail();
+    const userId = request.authUser.id;
+    const rating = yield Rating.with('profile').where({ id, user_id: userId }).firstOrFail();
     yield rating.delete();
 
     response.status(204).send();
