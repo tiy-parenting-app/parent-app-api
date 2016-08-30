@@ -23,6 +23,10 @@ class User extends Lucid {
       'conversation_id', 'id');
   }
 
+  ratings() {
+    return this.hasMany('App/Model/Rating');
+  }
+
 }
 
 module.exports = User;
