@@ -14,7 +14,7 @@ class ChildController {
   * store(request, response) {
     const input = request.jsonApi.getAttributesSnakeCase(attributes);
     const foreignKeys = {
-      profile_id: profile,
+      profile_id: request.input('data.relationships.profile.data.id'),
     };
     const child = yield Child.create(Object.assign({}, input, foreignKeys));
 
@@ -34,7 +34,7 @@ class ChildController {
 
     const input = request.jsonApi.getAttributesSnakeCase(attributes);
     const foreignKeys = {
-      profile_id: profile,
+      profile_id: request.input('data.relationships.profile.data.id'),
     };
 
     const child = yield Child.with('profile').where({ id }).firstOrFail();
