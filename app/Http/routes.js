@@ -36,6 +36,7 @@ Route.post('/token', 'SessionController.store');
 
 Route.get('/users/current', 'UserController.current').middleware('auth');
 Route.resource('/profiles', 'ProfileController').except(['create', 'edit']).middleware('auth');
+Route.resource('/children', 'ChildController').except(['create', 'edit']).middleware('auth');
 
 Route.resource('/users', 'UserController')
   .except(['create', 'edit']).middleware('auth');

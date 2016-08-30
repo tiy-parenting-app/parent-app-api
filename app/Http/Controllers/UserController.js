@@ -7,16 +7,14 @@ const attributes = ['email', 'password', 'account-type'];
 class UserController {
 
   * index(request, response) {
-    const users = yield User.with('profile').fetch();
+    const users = yield User.with('profile.children').fetch();
 
     response.jsonApi('User', users);
   }
 
   * show(request, response) {
     const id = request.param('id');
-    const user = yield User.with('profile').where({ id }).firstOrFail();
-
-    console.log(user.toJSON());
+    const user = yield User.with('profile.children').where({ id }).firstOrFail();
 
     response.jsonApi('User', user);
   }
@@ -35,7 +33,7 @@ class UserController {
 
   * current(request, response) {
     const user = request.authUser;
-    yield user.related('profile').load();
+    yield user.related('profile.children').load();
 
     response.jsonApi('User', user);
   }

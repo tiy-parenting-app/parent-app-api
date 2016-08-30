@@ -26,6 +26,13 @@ class Profile extends JsonApiView {
       excludeRelation: 'profile',
     });
   }
+
+  children() {
+    return this.hasMany('App/Http/JsonApiViews/Child', {
+      included: true,
+      excludeRelation: 'profile',
+    });
+  }
 }
 
 module.exports = Profile;

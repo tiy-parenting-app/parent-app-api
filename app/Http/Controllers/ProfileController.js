@@ -18,7 +18,7 @@ const attributes = [
 class ProfileController {
 
   * index(request, response) {
-    const profiles = yield Profile.with('user').fetch();
+    const profiles = yield Profile.with('user', 'children').fetch();
 
     response.jsonApi('Profile', profiles);
   }
@@ -35,7 +35,7 @@ class ProfileController {
 
   * show(request, response) {
     const id = request.param('id');
-    const profile = yield Profile.with('user').where({ id }).firstOrFail();
+    const profile = yield Profile.with('user', 'children').where({ id }).firstOrFail();
 
     response.jsonApi('Profile', profile);
   }
@@ -46,7 +46,7 @@ class ProfileController {
 
     const input = request.jsonApi.getAttributesSnakeCase(attributes);
 
-    const profile = yield Profile.with('user').where({ id }).firstOrFail();
+    const profile = yield Profile.with('user', 'children').where({ id }).firstOrFail();
     profile.fill(input);
     yield profile.save();
 
