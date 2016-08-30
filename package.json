@@ -30,6 +30,8 @@
     "adonis-middleware": "^1.0.7",
     "pg": "^6.1.0",
     "pg-native": "^1.10.0",
+    "snakecase-keys": "^1.0.0",
+    "uuid": "^2.0.2",
     "youch": "^1.0.1"
   },
   "autoload": {
