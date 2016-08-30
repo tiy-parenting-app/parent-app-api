@@ -1,3 +1,4 @@
+
 'use strict';
 
 const Message = use('App/Model/Message');
@@ -14,8 +15,8 @@ class MessageController {
   * store(request, response) {
     const input = request.jsonApi.getAttributesSnakeCase(attributes);
     const foreignKeys = {
-      participant_id: participant,
-      conversation_id: conversation,
+      participant_id: request.authUser.id,
+      conversation_id: request.input('data.relationships.conversation.data.id'),
     };
     const message = yield Message.create(Object.assign({}, input, foreignKeys));
 

@@ -6,6 +6,12 @@ const attributes = ['email', 'password'];
 
 class UserController {
 
+  * index(request, response) {
+    const users = yield User.with('profile').fetch();
+
+    response.jsonApi('User', users);
+  }
+
   * show(request, response) {
     const id = request.param('id');
     const user = yield User.with('profile').where({ id }).firstOrFail();
