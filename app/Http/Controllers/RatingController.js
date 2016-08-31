@@ -17,7 +17,9 @@ class RatingController {
       profile_id: request.input('data.relationships.profile.data.id'),
       user_id: request.authUser.id,
     };
-    const rating = yield Rating.create(Object.assign({}, input, foreignKeys));
+    const rating = yield Rating.findOrCreate(foreignKeys, foreignKeys);
+    rating.fill(Object.assign({}, input, foreignKeys));
+    yield rating.save();
 
     response.jsonApi('Rating', rating);
   }
