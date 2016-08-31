@@ -10,14 +10,20 @@ class UserController {
     const typeFilter = request.input('filter.account-type');
 
     if (typeFilter) {
-      const users = yield User.with('profile.children')
+      const users = yield User.with('profile.children', 'profile.ratings')
+        .scope('profile.ratings', (query) => {
+          query.where('ratings.user_id', request.authUser.id);
+        })
         .where('users.account_type', typeFilter)
         .fetch();
 
       response.jsonApi('User', users);
     }
 
-    const users = yield User.with('profile.children').fetch();
+    const users = yield User.with('profile.children', 'profile.ratings')
+      .scope('profile.ratings', (query) => {
+        query.where('ratings.user_id', request.authUser.id);
+      }).fetch();
 
     response.jsonApi('User', users);
   }

@@ -7,7 +7,14 @@ class Rating extends JsonApiView {
 
   profile() {
     return this.belongsTo('App/Http/JsonApiViews/Profile', {
-      included: true,
+      included: false,
+      excludeRelation: 'ratings',
+    });
+  }
+
+  user() {
+    return this.belongsTo('App/Http/JsonApiViews/User', {
+      included: false,
       excludeRelation: 'ratings',
     });
   }
