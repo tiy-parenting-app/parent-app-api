@@ -41,11 +41,6 @@ Route.resource('/profiles', 'ProfileController')
   .middleware('auth');
 Route.resource('/profiles', 'ProfileController')
   .only(['update'])
-  .middleware('auth')
-  .formats(['json'], true);
-Route.put('/profiles/:id', 'ProfileController')
-  .middleware('auth');
-Route.patch('/profiles/:id', 'ProfileController.updateUpload')
   .middleware('auth');
 
 Route.resource('/children', 'ChildController').except(['create', 'edit']).middleware('auth');
