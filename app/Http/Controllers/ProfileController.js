@@ -19,6 +19,18 @@ const File = use('File');
 class ProfileController {
 
   * index(request, response) {
+    const typeFilter = request.input('filter.account-type');
+
+    if (typeFilter) {
+      const profiles = yield Profile.with('user', 'children')
+        .join('users', 'users.id', 'profiles.user_id')
+        .where('users.account_type', typeFilter)
+        .select('profiles.*')
+        .fetch();
+
+      return response.jsonApi('Profile', profiles);
+    }
+
     const profiles = yield Profile.with('user', 'children').fetch();
 
     response.jsonApi('Profile', profiles);

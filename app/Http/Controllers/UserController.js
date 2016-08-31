@@ -7,6 +7,16 @@ const attributes = ['email', 'password', 'account-type'];
 class UserController {
 
   * index(request, response) {
+    const typeFilter = request.input('filter.account-type');
+
+    if (typeFilter) {
+      const users = yield User.with('profile.children')
+        .where('users.account_type', typeFilter)
+        .fetch();
+
+      response.jsonApi('User', users);
+    }
+
     const users = yield User.with('profile.children').fetch();
 
     response.jsonApi('User', users);
