@@ -10,11 +10,12 @@ module.exports = (server) => {
       console.log('user joined: ' + roomName);
 
       Event.on('message.create', function*(message) {
-        console.log('message: ' + message.conversation.id);
+        const m = message.toJSON();
 
-        if (message.conversation.id === roomName) {
-          socket
-            .emit('message', message.toJSON());
+        console.log(m.conversation.id, roomName);
+        if (parseInt(m.conversation.id) === parseInt(roomName)) {
+          socket.broadcast
+            .emit('message', m);
         }
       });
     });
