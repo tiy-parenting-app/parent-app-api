@@ -56,3 +56,6 @@ Route.resource('/participants', 'ParticipantController')
 
 Route.resource('/messages', 'MessageController')
   .except(['create', 'edit']).middleware('auth');
+
+Route.resource('/ratings', 'RatingController')
+  .except(['create', 'edit']).middleware('auth');
