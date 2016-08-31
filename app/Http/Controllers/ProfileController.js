@@ -54,12 +54,34 @@ class ProfileController {
   }
 
   * update(request, response) {
-    const id = request.param('id');
-    request.jsonApi.assertId(id);
+    const profilePic = request.file('uploadFile', {
+      maxSize: '10mb',
+      allowedExtensions: ['jpg', 'png', 'jpeg'],
+    });
 
+    const id = request.param('id');
+    const profile = yield Profile.with('user', 'children').where({ id }).firstOrFail();
+
+    if (profilePic && profilePic.exists()) {
+      const profilePic = request.file('uploadFile', {
+        maxSize: '10mb',
+        allowedExtensions: ['jpg', 'png', 'jpeg'],
+      });
+      const attrs = snakeCaseKeys(request.all());
+
+      yield File.upload(profilePic.clientName(), profilePic);
+
+      attrs.user_pic_url = `/uploads/${profilePic.clientName()}`;
+
+      profile.fill(attrs);
+      yield profile.save();
+
+      response.jsonApi('Profile', profile);
+    }
+
+    request.jsonApi.assertId(id);
     const input = request.jsonApi.getAttributesSnakeCase(attributes);
 
-    const profile = yield Profile.with('user', 'children').where({ id }).firstOrFail();
     profile.fill(input);
     yield profile.save();
 
@@ -71,8 +93,8 @@ class ProfileController {
     const attrs = snakeCaseKeys(request.all());
 
     const profilePic = request.file('uploadFile', {
-        maxSize: '10mb',
-        allowedExtensions: ['jpg', 'png', 'jpeg']
+      maxSize: '10mb',
+      allowedExtensions: ['jpg', 'png', 'jpeg'],
     });
 
     yield File.upload(profilePic.clientName(), profilePic);
