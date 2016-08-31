@@ -2,6 +2,7 @@
 'use strict';
 
 const Message = use('App/Model/Message');
+const Event = use('Event');
 const attributes = ['text'];
 
 class MessageController {
@@ -19,6 +20,8 @@ class MessageController {
       conversation_id: request.input('data.relationships.conversation.data.id'),
     };
     const message = yield Message.create(Object.assign({}, input, foreignKeys));
+    yield message.related('conversation', 'participant').load();
+    Event.fire('message.create', message);
 
     response.jsonApi('Message', message);
   }
