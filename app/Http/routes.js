@@ -59,3 +59,6 @@ Route.resource('/messages', 'MessageController')
 
 Route.resource('/ratings', 'RatingController')
   .except(['create', 'edit']).middleware('auth');
+
+Route.resource('/likes', 'LikeController')
+  .except(['create', 'edit']).middleware('auth');
