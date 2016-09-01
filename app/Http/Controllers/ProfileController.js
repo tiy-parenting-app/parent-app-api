@@ -22,7 +22,13 @@ class ProfileController {
     const typeFilter = request.input('filter.account-type');
 
     if (typeFilter) {
-      const profiles = yield Profile.with('user', 'children')
+      const profiles = yield Profile.with('user', 'children', 'ratings', 'likes')
+        .scope('ratings', (query) => {
+          query.where('ratings.user_id', request.authUser.id);
+        })
+        .scope('likes', (query) => {
+          query.where('like.user_id', request.authUser.id);
+        })
         .join('users', 'users.id', 'profiles.user_id')
         .where('users.account_type', typeFilter)
         .select('profiles.*')
@@ -31,7 +37,14 @@ class ProfileController {
       return response.jsonApi('Profile', profiles);
     }
 
-    const profiles = yield Profile.with('user', 'children').fetch();
+    const profiles = yield Profile.with('user', 'children', 'ratings', 'likes')
+      .scope('ratings', (query) => {
+        query.where('ratings.user_id', request.authUser.id);
+      })
+      .scope('likes', (query) => {
+        query.where('like.user_id', request.authUser.id);
+      })
+      .fetch();
 
     response.jsonApi('Profile', profiles);
   }
@@ -48,7 +61,15 @@ class ProfileController {
 
   * show(request, response) {
     const id = request.param('id');
-    const profile = yield Profile.with('user', 'children').where({ id }).firstOrFail();
+    const profile = yield Profile.with('user', 'children', 'ratings', 'likes')
+      .scope('ratings', (query) => {
+        query.where('ratings.user_id', request.authUser.id);
+      })
+      .scope('likes', (query) => {
+        query.where('like.user_id', request.authUser.id);
+      })
+      .where({ id })
+      .firstOrFail();
 
     response.jsonApi('Profile', profile);
   }
@@ -60,7 +81,15 @@ class ProfileController {
     });
 
     const id = request.param('id');
-    const profile = yield Profile.with('user', 'children').where({ id }).firstOrFail();
+    const profile = yield Profile.with('user', 'children', 'ratings', 'likes')
+      .scope('ratings', (query) => {
+        query.where('ratings.user_id', request.authUser.id);
+      })
+      .scope('likes', (query) => {
+        query.where('like.user_id', request.authUser.id);
+      })
+      .where({ id })
+      .firstOrFail();
 
     if (profilePic && profilePic.exists()) {
       const profilePic = request.file('uploadFile', {
@@ -101,7 +130,16 @@ class ProfileController {
 
     attrs.user_pic_url = `/uploads/${profilePic.clientName()}`;
 
-    const profile = yield Profile.with('user', 'children').where({ id }).firstOrFail();
+    const profile = yield Profile.with('user', 'children', 'ratings', 'likes')
+      .scope('ratings', (query) => {
+        query.where('ratings.user_id', request.authUser.id);
+      })
+      .scope('likes', (query) => {
+        query.where('like.user_id', request.authUser.id);
+      })
+      .where({ id })
+      .firstOrFail();
+
     profile.fill(attrs);
     yield profile.save();
 
