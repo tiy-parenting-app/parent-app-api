@@ -16,6 +16,10 @@ class Profile extends Lucid {
   ratings() {
     return this.hasMany('App/Model/Rating');
   }
+
+  likes() {
+    return this.hasMany('App/Model/Like');
+  }
 }
 
 module.exports = Profile;
