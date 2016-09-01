@@ -18,7 +18,7 @@ class Profile extends Lucid {
   }
 
   likes() {
-    return this.hasMany('App/Model/Likes');
+    return this.hasMany('App/Model/Like');
   }
 }
 

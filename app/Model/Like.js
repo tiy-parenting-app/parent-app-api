@@ -1,6 +1,6 @@
-'use strict'
+'use strict';
 
-const Lucid = use('Lucid')
+const Lucid = use('Lucid');
 
 class Like extends Lucid {
 
@@ -13,4 +13,4 @@ class Like extends Lucid {
   }
 }
 
-module.exports = Like
+module.exports = Like;
