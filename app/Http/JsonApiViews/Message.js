@@ -7,14 +7,14 @@ class Message extends JsonApiView {
 
   participant() {
     return this.belongsTo('App/Http/JsonApiViews/Participant', {
-      included: true,
+      included: false,
       excludeRelation: 'messages',
     });
   }
 
   conversation() {
     return this.belongsTo('App/Http/JsonApiViews/Conversation', {
-      included: true,
+      included: false,
       excludeRelation: 'messages',
     });
   }
