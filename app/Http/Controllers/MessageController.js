@@ -16,8 +16,9 @@ class MessageController {
 
   * store(request, response) {
     const input = request.jsonApi.getAttributesSnakeCase(attributes);
-    const conversation_id = request.input('data.relationships.conversation.data.id');
-    const participant = yield Participant.find({ user_id, conversation_id });
+    const conversation_id = parseInt(request.input('data.relationships.conversation.data.id'));
+    const participant = yield Participant
+      .query().where({ user_id: request.currentUser.id, conversation_id }).first();
 
     const foreignKeys = {
       participant_id: participant.id,
@@ -42,8 +43,9 @@ class MessageController {
     request.jsonApi.assertId(id);
 
     const input = request.jsonApi.getAttributesSnakeCase(attributes);
-    const conversation_id = request.input('data.relationships.conversation.data.id');
-    const participant = yield Participant.find({ user_id, conversation_id });
+    const conversation_id = parseInt(request.input('data.relationships.conversation.data.id'));
+    const participant = yield Participant
+      .query().where({ user_id: request.currentUser.id, conversation_id }).first();
 
     const foreignKeys = {
       participant_id: participant.id,
