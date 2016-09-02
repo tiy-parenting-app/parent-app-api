@@ -21,7 +21,7 @@
     "adonis-ace": "^3.0.1",
     "adonis-auth": "^1.0.0",
     "adonis-commands": "^2.1.0",
-    "adonis-filesystem": "^0.2.1",
+    "adonis-filesystem": "^0.3.0",
     "adonis-fold": "^3.0.2",
     "adonis-framework": "^3.0.1",
     "adonis-generators": "^0.4.0",

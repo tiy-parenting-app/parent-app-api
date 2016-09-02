@@ -100,7 +100,8 @@ class ProfileController {
 
       yield File.upload(profilePic.clientName(), profilePic);
 
-      attrs.user_pic_url = `/uploads/${profilePic.clientName()}`;
+      attrs.user_pic_url = profilePic.clientName();
+      attrs.user_pic_extension = profilePic.extension();
 
       profile.fill(attrs);
       yield profile.save();
@@ -128,7 +129,8 @@ class ProfileController {
 
     yield File.upload(profilePic.clientName(), profilePic);
 
-    attrs.user_pic_url = `/uploads/${profilePic.clientName()}`;
+    attrs.user_pic_url = profilePic.clientName();
+    attrs.user_pic_extension = profilePic.extension();
 
     const profile = yield Profile.with('user', 'children', 'ratings', 'likes')
       .scope('ratings', (query) => {

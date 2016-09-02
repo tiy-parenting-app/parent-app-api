@@ -1,0 +1,584 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/Cellar/node/6.1.0/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'shrinkwrap',
+1 verbose cli   '--dev' ]
+2 info using npm@3.10.6
+3 info using node@v6.1.0
+4 info lifecycle adonis-app@3.0.0~preshrinkwrap: adonis-app@3.0.0
+5 silly lifecycle adonis-app@3.0.0~preshrinkwrap: no script for preshrinkwrap, continuing
+6 info lifecycle adonis-app@3.0.0~shrinkwrap: adonis-app@3.0.0
+7 silly lifecycle adonis-app@3.0.0~shrinkwrap: no script for shrinkwrap, continuing
+8 verbose stack Error: Problems were encountered
+8 verbose stack Please correct and try again.
+8 verbose stack extraneous: acorn-jsx@3.0.1 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/acorn-jsx
+8 verbose stack extraneous: acorn@3.3.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/acorn-jsx/node_modules/acorn
+8 verbose stack extraneous: ansi-escapes@1.4.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/ansi-escapes
+8 verbose stack extraneous: ansi-regex@2.0.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/ansi-regex
+8 verbose stack extraneous: ansi-styles@2.2.1 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/ansi-styles
+8 verbose stack extraneous: argparse@1.0.7 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/argparse
+8 verbose stack extraneous: array-union@1.0.2 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/array-union
+8 verbose stack extraneous: array-uniq@1.0.3 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/array-uniq
+8 verbose stack extraneous: arrify@1.0.1 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/arrify
+8 verbose stack extraneous: balanced-match@0.4.2 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/balanced-match
+8 verbose stack extraneous: base64-url@1.2.2 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/base64-url
+8 verbose stack extraneous: brace-expansion@1.1.6 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/brace-expansion
+8 verbose stack extraneous: bytes@2.4.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/bytes
+8 verbose stack extraneous: caller-path@0.1.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/caller-path
+8 verbose stack extraneous: callsites@0.2.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/callsites
+8 verbose stack extraneous: chalk@1.1.3 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/chalk
+8 verbose stack extraneous: cli-cursor@1.0.2 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/cli-cursor
+8 verbose stack extraneous: cli-width@2.1.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/cli-width
+8 verbose stack extraneous: co-body@4.2.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/co-body
+8 verbose stack extraneous: code-point-at@1.0.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/code-point-at
+8 verbose stack extraneous: concat-map@0.0.1 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/concat-map
+8 verbose stack extraneous: concat-stream@1.5.1 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/concat-stream
+8 verbose stack extraneous: readable-stream@2.0.6 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/concat-stream/node_modules/readable-stream
+8 verbose stack extraneous: core-util-is@1.0.2 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/core-util-is
+8 verbose stack extraneous: csrf@3.0.3 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/csrf
+8 verbose stack extraneous: d@0.1.1 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/d
+8 verbose stack extraneous: debug@2.2.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/debug
+8 verbose stack extraneous: deep-is@0.1.3 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/deep-is
+8 verbose stack extraneous: del@2.2.1 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/del
+8 verbose stack extraneous: doctrine@1.2.2 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/doctrine
+8 verbose stack extraneous: esutils@1.1.6 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/doctrine/node_modules/esutils
+8 verbose stack extraneous: es5-ext@0.10.12 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/es5-ext
+8 verbose stack extraneous: es6-iterator@2.0.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/es6-iterator
+8 verbose stack extraneous: es6-map@0.1.4 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/es6-map
+8 verbose stack extraneous: es6-set@0.1.4 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/es6-set
+8 verbose stack extraneous: es6-symbol@3.1.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/es6-symbol
+8 verbose stack extraneous: es6-weak-map@2.0.1 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/es6-weak-map
+8 verbose stack extraneous: escape-string-regexp@1.0.5 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/escape-string-regexp
+8 verbose stack extraneous: escope@3.6.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/escope
+8 verbose stack extraneous: eslint@3.2.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/eslint
+8 verbose stack extraneous: eslint-config-airbnb@6.2.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/eslint-config-airbnb
+8 verbose stack peer invalid: eslint@^2.4.0, required by eslint-config-airbnb@6.2.0
+8 verbose stack peer invalid: eslint-plugin-react@^4.2.3, required by eslint-config-airbnb@6.2.0
+8 verbose stack extraneous: eslint-config-rtablada@2.0.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/eslint-config-rtablada
+8 verbose stack extraneous: espree@3.1.7 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/espree
+8 verbose stack extraneous: acorn@3.3.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/espree/node_modules/acorn
+8 verbose stack extraneous: esprima@2.7.2 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/esprima
+8 verbose stack extraneous: esrecurse@4.1.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/esrecurse
+8 verbose stack extraneous: estraverse@4.1.1 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/esrecurse/node_modules/estraverse
+8 verbose stack extraneous: estraverse@4.2.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/estraverse
+8 verbose stack extraneous: esutils@2.0.2 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/esutils
+8 verbose stack extraneous: event-emitter@0.3.4 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/event-emitter
+8 verbose stack extraneous: exit-hook@1.1.1 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/exit-hook
+8 verbose stack extraneous: fast-levenshtein@1.1.4 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/fast-levenshtein
+8 verbose stack extraneous: figures@1.7.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/figures
+8 verbose stack extraneous: file-entry-cache@1.2.4 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/file-entry-cache
+8 verbose stack extraneous: flat-cache@1.0.10 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/flat-cache
+8 verbose stack extraneous: formidable@1.0.17 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/formidable
+8 verbose stack extraneous: fs.realpath@1.0.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/fs.realpath
+8 verbose stack extraneous: generate-function@2.0.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/generate-function
+8 verbose stack extraneous: generate-object-property@1.2.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/generate-object-property
+8 verbose stack extraneous: glob@7.0.5 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/glob
+8 verbose stack extraneous: globals@9.9.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/globals
+8 verbose stack extraneous: globby@5.0.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/globby
+8 verbose stack extraneous: graceful-fs@4.1.5 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/graceful-fs
+8 verbose stack extraneous: has-ansi@2.0.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/has-ansi
+8 verbose stack extraneous: iconv-lite@0.4.13 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/iconv-lite
+8 verbose stack extraneous: ignore@3.1.3 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/ignore
+8 verbose stack extraneous: imurmurhash@0.1.4 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/imurmurhash
+8 verbose stack extraneous: inflation@2.0.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/inflation
+8 verbose stack extraneous: inflight@1.0.5 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/inflight
+8 verbose stack extraneous: inherits@2.0.1 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/inherits
+8 verbose stack extraneous: inquirer@0.12.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/inquirer
+8 verbose stack extraneous: is-fullwidth-code-point@1.0.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/is-fullwidth-code-point
+8 verbose stack extraneous: is-my-json-valid@2.13.1 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/is-my-json-valid
+8 verbose stack extraneous: is-path-cwd@1.0.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/is-path-cwd
+8 verbose stack extraneous: is-path-in-cwd@1.0.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/is-path-in-cwd
+8 verbose stack extraneous: is-path-inside@1.0.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/is-path-inside
+8 verbose stack extraneous: is-property@1.0.2 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/is-property
+8 verbose stack extraneous: is-resolvable@1.0.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/is-resolvable
+8 verbose stack extraneous: isarray@1.0.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/isarray
+8 verbose stack extraneous: js-yaml@3.6.1 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/js-yaml
+8 verbose stack extraneous: json-stable-stringify@1.0.1 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/json-stable-stringify
+8 verbose stack extraneous: jsonify@0.0.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/jsonify
+8 verbose stack extraneous: jsonpointer@2.0.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/jsonpointer
+8 verbose stack extraneous: levn@0.3.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/levn
+8 verbose stack extraneous: lodash@4.14.1 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/lodash
+8 verbose stack extraneous: media-typer@0.3.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/media-typer
+8 verbose stack extraneous: mime-db@1.23.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/mime-db
+8 verbose stack extraneous: mime-types@2.1.11 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/mime-types
+8 verbose stack extraneous: minimatch@3.0.2 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/minimatch
+8 verbose stack extraneous: minimist@0.0.8 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/minimist
+8 verbose stack extraneous: mkdirp@0.5.1 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/mkdirp
+8 verbose stack extraneous: ms@0.7.1 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/ms
+8 verbose stack extraneous: mute-stream@0.0.5 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/mute-stream
+8 verbose stack extraneous: node-csp@1.0.1 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/node-csp
+8 verbose stack extraneous: node-guard@1.0.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/node-guard
+8 verbose stack extraneous: node-uuid@1.4.7 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/node-uuid
+8 verbose stack extraneous: number-is-nan@1.0.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/number-is-nan
+8 verbose stack extraneous: object-assign@4.1.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/object-assign
+8 verbose stack extraneous: once@1.3.3 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/once
+8 verbose stack extraneous: onetime@1.1.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/onetime
+8 verbose stack extraneous: optionator@0.8.1 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/optionator
+8 verbose stack extraneous: os-homedir@1.0.1 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/os-homedir
+8 verbose stack extraneous: parent-require@1.0.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/parent-require
+8 verbose stack extraneous: path-is-absolute@1.0.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/path-is-absolute
+8 verbose stack extraneous: path-is-inside@1.0.1 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/path-is-inside
+8 verbose stack extraneous: pify@2.3.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/pify
+8 verbose stack extraneous: pinkie@2.0.4 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/pinkie
+8 verbose stack extraneous: pinkie-promise@2.0.1 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/pinkie-promise
+8 verbose stack extraneous: platform@1.3.1 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/platform
+8 verbose stack extraneous: pluralize@1.2.1 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/pluralize
+8 verbose stack extraneous: prelude-ls@1.1.2 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/prelude-ls
+8 verbose stack extraneous: process-nextick-args@1.0.7 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/process-nextick-args
+8 verbose stack extraneous: progress@1.1.8 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/progress
+8 verbose stack extraneous: qs@4.0.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/qs
+8 verbose stack extraneous: random-bytes@1.0.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/random-bytes
+8 verbose stack extraneous: raw-body@2.1.7 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/raw-body
+8 verbose stack extraneous: read-json-sync@1.1.1 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/read-json-sync
+8 verbose stack extraneous: readline2@1.0.1 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/readline2
+8 verbose stack extraneous: require-uncached@1.0.2 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/require-uncached
+8 verbose stack extraneous: resolve-from@1.0.1 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/resolve-from
+8 verbose stack extraneous: restore-cursor@1.0.1 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/restore-cursor
+8 verbose stack extraneous: rimraf@2.5.4 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/rimraf
+8 verbose stack extraneous: rndm@1.2.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/rndm
+8 verbose stack extraneous: run-async@0.1.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/run-async
+8 verbose stack extraneous: rx-lite@3.1.2 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/rx-lite
+8 verbose stack extraneous: shelljs@0.6.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/shelljs
+8 verbose stack extraneous: slice-ansi@0.0.4 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/slice-ansi
+8 verbose stack extraneous: sprintf-js@1.0.3 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/sprintf-js
+8 verbose stack extraneous: string_decoder@0.10.31 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/string_decoder
+8 verbose stack extraneous: string-width@1.0.1 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/string-width
+8 verbose stack extraneous: strip-ansi@3.0.1 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/strip-ansi
+8 verbose stack extraneous: strip-bom@3.0.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/strip-bom
+8 verbose stack extraneous: strip-json-comments@1.0.4 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/strip-json-comments
+8 verbose stack extraneous: supports-color@2.0.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/supports-color
+8 verbose stack extraneous: table@3.7.8 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/table
+8 verbose stack extraneous: bluebird@3.4.1 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/table/node_modules/bluebird
+8 verbose stack extraneous: text-table@0.2.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/text-table
+8 verbose stack extraneous: through@2.3.8 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/through
+8 verbose stack extraneous: tryit@1.0.2 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/tryit
+8 verbose stack extraneous: tsscmp@1.0.5 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/tsscmp
+8 verbose stack extraneous: tv4@1.2.7 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/tv4
+8 verbose stack extraneous: type-check@0.3.2 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/type-check
+8 verbose stack extraneous: type-is@1.6.13 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/type-is
+8 verbose stack extraneous: typedarray@0.0.6 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/typedarray
+8 verbose stack extraneous: uid-safe@2.1.1 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/uid-safe
+8 verbose stack extraneous: unpipe@1.0.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/unpipe
+8 verbose stack extraneous: user-home@2.0.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/user-home
+8 verbose stack extraneous: util-deprecate@1.0.2 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/util-deprecate
+8 verbose stack extraneous: wordwrap@1.0.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/wordwrap
+8 verbose stack extraneous: wrappy@1.0.2 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/wrappy
+8 verbose stack extraneous: write@0.2.1 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/write
+8 verbose stack extraneous: xregexp@3.1.1 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/xregexp
+8 verbose stack extraneous: xtend@4.0.1 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/xtend
+8 verbose stack extraneous: inflected@1.1.7 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/inflected
+8 verbose stack extraneous: jsonapi-serializer@3.3.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/jsonapi-serializer
+8 verbose stack extraneous: lodash@3.10.1 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/jsonapi-serializer/node_modules/lodash
+8 verbose stack extraneous: lodash.keysin@4.2.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/lodash.keysin
+8 verbose stack extraneous: lodash.mapkeys@4.6.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/lodash.mapkeys
+8 verbose stack extraneous: lodash.pick@4.4.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/lodash.pick
+8 verbose stack extraneous: sqlite3@3.1.4 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3
+8 verbose stack extraneous: abbrev@1.0.7 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/abbrev
+8 verbose stack extraneous: ansi@0.3.1 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/ansi
+8 verbose stack extraneous: ansi-regex@2.0.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/ansi-regex
+8 verbose stack extraneous: ansi-styles@2.2.1 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/ansi-styles
+8 verbose stack extraneous: are-we-there-yet@1.1.2 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/are-we-there-yet
+8 verbose stack extraneous: asn1@0.2.3 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/asn1
+8 verbose stack extraneous: assert-plus@0.2.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/assert-plus
+8 verbose stack extraneous: async@1.5.2 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/async
+8 verbose stack extraneous: aws-sign2@0.6.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/aws-sign2
+8 verbose stack extraneous: aws4@1.4.1 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/aws4
+8 verbose stack extraneous: balanced-match@0.4.1 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/balanced-match
+8 verbose stack extraneous: bl@1.1.2 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/bl
+8 verbose stack extraneous: readable-stream@2.0.6 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/bl/node_modules/readable-stream
+8 verbose stack extraneous: block-stream@0.0.9 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/block-stream
+8 verbose stack extraneous: boom@2.10.1 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/boom
+8 verbose stack extraneous: brace-expansion@1.1.4 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/brace-expansion
+8 verbose stack extraneous: caseless@0.11.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/caseless
+8 verbose stack extraneous: chalk@1.1.3 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/chalk
+8 verbose stack extraneous: combined-stream@1.0.5 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/combined-stream
+8 verbose stack extraneous: commander@2.9.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/commander
+8 verbose stack extraneous: concat-map@0.0.1 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/concat-map
+8 verbose stack extraneous: core-util-is@1.0.2 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/core-util-is
+8 verbose stack extraneous: cryptiles@2.0.5 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/cryptiles
+8 verbose stack extraneous: dashdash@1.13.1 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/dashdash
+8 verbose stack extraneous: assert-plus@1.0.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/dashdash/node_modules/assert-plus
+8 verbose stack extraneous: debug@2.2.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/debug
+8 verbose stack extraneous: deep-extend@0.4.1 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/deep-extend
+8 verbose stack extraneous: delayed-stream@1.0.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/delayed-stream
+8 verbose stack extraneous: delegates@1.0.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/delegates
+8 verbose stack extraneous: ecc-jsbn@0.1.1 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/ecc-jsbn
+8 verbose stack extraneous: escape-string-regexp@1.0.5 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/escape-string-regexp
+8 verbose stack extraneous: extend@3.0.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/extend
+8 verbose stack extraneous: extsprintf@1.0.2 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/extsprintf
+8 verbose stack extraneous: forever-agent@0.6.1 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/forever-agent
+8 verbose stack extraneous: form-data@1.0.0-rc4 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/form-data
+8 verbose stack extraneous: fstream@1.0.9 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/fstream
+8 verbose stack extraneous: fstream-ignore@1.0.4 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/fstream-ignore
+8 verbose stack extraneous: gauge@1.2.7 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/gauge
+8 verbose stack extraneous: generate-function@2.0.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/generate-function
+8 verbose stack extraneous: generate-object-property@1.2.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/generate-object-property
+8 verbose stack extraneous: getpass@0.1.6 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/getpass
+8 verbose stack extraneous: assert-plus@1.0.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/getpass/node_modules/assert-plus
+8 verbose stack extraneous: glob@7.0.3 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/glob
+8 verbose stack extraneous: graceful-fs@4.1.4 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/graceful-fs
+8 verbose stack extraneous: graceful-readlink@1.0.1 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/graceful-readlink
+8 verbose stack extraneous: har-validator@2.0.6 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/har-validator
+8 verbose stack extraneous: has-ansi@2.0.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/has-ansi
+8 verbose stack extraneous: has-unicode@2.0.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/has-unicode
+8 verbose stack extraneous: hawk@3.1.3 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/hawk
+8 verbose stack extraneous: hoek@2.16.3 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/hoek
+8 verbose stack extraneous: http-signature@1.1.1 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/http-signature
+8 verbose stack extraneous: inflight@1.0.4 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/inflight
+8 verbose stack extraneous: inherits@2.0.1 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/inherits
+8 verbose stack extraneous: ini@1.3.4 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/ini
+8 verbose stack extraneous: is-my-json-valid@2.13.1 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/is-my-json-valid
+8 verbose stack extraneous: is-property@1.0.2 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/is-property
+8 verbose stack extraneous: is-typedarray@1.0.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/is-typedarray
+8 verbose stack extraneous: isarray@1.0.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/isarray
+8 verbose stack extraneous: isstream@0.1.2 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/isstream
+8 verbose stack extraneous: jodid25519@1.0.2 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/jodid25519
+8 verbose stack extraneous: jsbn@0.1.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/jsbn
+8 verbose stack extraneous: json-schema@0.2.2 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/json-schema
+8 verbose stack extraneous: json-stringify-safe@5.0.1 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/json-stringify-safe
+8 verbose stack extraneous: jsonpointer@2.0.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/jsonpointer
+8 verbose stack extraneous: jsprim@1.2.2 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/jsprim
+8 verbose stack extraneous: lodash._baseslice@4.0.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/lodash._baseslice
+8 verbose stack extraneous: lodash._basetostring@4.12.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/lodash._basetostring
+8 verbose stack extraneous: lodash.pad@4.4.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/lodash.pad
+8 verbose stack extraneous: lodash.padend@4.5.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/lodash.padend
+8 verbose stack extraneous: lodash.padstart@4.5.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/lodash.padstart
+8 verbose stack extraneous: lodash.tostring@4.1.3 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/lodash.tostring
+8 verbose stack extraneous: mime-db@1.23.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/mime-db
+8 verbose stack extraneous: mime-types@2.1.11 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/mime-types
+8 verbose stack extraneous: minimatch@3.0.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/minimatch
+8 verbose stack extraneous: minimist@0.0.8 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/minimist
+8 verbose stack extraneous: mkdirp@0.5.1 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/mkdirp
+8 verbose stack extraneous: ms@0.7.1 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/ms
+8 verbose stack extraneous: nan@2.3.5 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/nan
+8 verbose stack extraneous: node-pre-gyp@0.6.28 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/node-pre-gyp
+8 verbose stack extraneous: node-uuid@1.4.7 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/node-uuid
+8 verbose stack extraneous: nopt@3.0.6 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/nopt
+8 verbose stack extraneous: npmlog@2.0.3 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/npmlog
+8 verbose stack extraneous: oauth-sign@0.8.2 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/oauth-sign
+8 verbose stack extraneous: once@1.3.3 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/once
+8 verbose stack extraneous: path-is-absolute@1.0.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/path-is-absolute
+8 verbose stack extraneous: pinkie@2.0.4 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/pinkie
+8 verbose stack extraneous: pinkie-promise@2.0.1 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/pinkie-promise
+8 verbose stack extraneous: process-nextick-args@1.0.7 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/process-nextick-args
+8 verbose stack extraneous: qs@6.1.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/qs
+8 verbose stack extraneous: rc@1.1.6 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/rc
+8 verbose stack extraneous: minimist@1.2.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/rc/node_modules/minimist
+8 verbose stack extraneous: readable-stream@2.1.2 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/readable-stream
+8 verbose stack extraneous: request@2.72.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/request
+8 verbose stack extraneous: rimraf@2.5.2 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/rimraf
+8 verbose stack extraneous: semver@5.1.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/semver
+8 verbose stack extraneous: sntp@1.0.9 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/sntp
+8 verbose stack extraneous: sshpk@1.8.3 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/sshpk
+8 verbose stack extraneous: assert-plus@1.0.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/sshpk/node_modules/assert-plus
+8 verbose stack extraneous: string_decoder@0.10.31 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/string_decoder
+8 verbose stack extraneous: stringstream@0.0.5 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/stringstream
+8 verbose stack extraneous: strip-ansi@3.0.1 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/strip-ansi
+8 verbose stack extraneous: strip-json-comments@1.0.4 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/strip-json-comments
+8 verbose stack extraneous: supports-color@2.0.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/supports-color
+8 verbose stack extraneous: tar@2.2.1 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/tar
+8 verbose stack extraneous: tar-pack@3.1.3 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/tar-pack
+8 verbose stack extraneous: readable-stream@2.0.6 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/tar-pack/node_modules/readable-stream
+8 verbose stack extraneous: tough-cookie@2.2.2 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/tough-cookie
+8 verbose stack extraneous: tunnel-agent@0.4.3 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/tunnel-agent
+8 verbose stack extraneous: tweetnacl@0.13.3 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/tweetnacl
+8 verbose stack extraneous: uid-number@0.0.6 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/uid-number
+8 verbose stack extraneous: util-deprecate@1.0.2 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/util-deprecate
+8 verbose stack extraneous: verror@1.3.6 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/verror
+8 verbose stack extraneous: wrappy@1.0.1 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/wrappy
+8 verbose stack extraneous: xtend@4.0.1 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/xtend
+8 verbose stack     at shrinkwrap_ (/usr/local/lib/node_modules/npm/lib/shrinkwrap.js:124:15)
+8 verbose stack     at Array.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/slide/lib/bind-actor.js:15:8)
+8 verbose stack     at LOOP (/usr/local/lib/node_modules/npm/node_modules/slide/lib/chain.js:15:14)
+8 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/slide/lib/chain.js:18:7
+8 verbose stack     at done (/usr/local/lib/node_modules/npm/lib/utils/lifecycle.js:132:5)
+8 verbose stack     at LOOP (/usr/local/lib/node_modules/npm/node_modules/slide/lib/chain.js:7:26)
+8 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/slide/lib/chain.js:18:7
+8 verbose stack     at /usr/local/lib/node_modules/npm/lib/utils/lifecycle.js:294:20
+8 verbose stack     at FSReqWrap.oncomplete (fs.js:117:15)
+9 verbose cwd /Users/ryan/IronYard/june/final-projects/parent-api
+10 error Darwin 15.6.0
+11 error argv "/usr/local/Cellar/node/6.1.0/bin/node" "/usr/local/bin/npm" "shrinkwrap" "--dev"
+12 error node v6.1.0
+13 error npm  v3.10.6
+14 error Problems were encountered
+14 error Please correct and try again.
+14 error extraneous: acorn-jsx@3.0.1 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/acorn-jsx
+14 error extraneous: acorn@3.3.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/acorn-jsx/node_modules/acorn
+14 error extraneous: ansi-escapes@1.4.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/ansi-escapes
+14 error extraneous: ansi-regex@2.0.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/ansi-regex
+14 error extraneous: ansi-styles@2.2.1 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/ansi-styles
+14 error extraneous: argparse@1.0.7 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/argparse
+14 error extraneous: array-union@1.0.2 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/array-union
+14 error extraneous: array-uniq@1.0.3 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/array-uniq
+14 error extraneous: arrify@1.0.1 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/arrify
+14 error extraneous: balanced-match@0.4.2 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/balanced-match
+14 error extraneous: base64-url@1.2.2 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/base64-url
+14 error extraneous: brace-expansion@1.1.6 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/brace-expansion
+14 error extraneous: bytes@2.4.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/bytes
+14 error extraneous: caller-path@0.1.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/caller-path
+14 error extraneous: callsites@0.2.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/callsites
+14 error extraneous: chalk@1.1.3 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/chalk
+14 error extraneous: cli-cursor@1.0.2 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/cli-cursor
+14 error extraneous: cli-width@2.1.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/cli-width
+14 error extraneous: co-body@4.2.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/co-body
+14 error extraneous: code-point-at@1.0.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/code-point-at
+14 error extraneous: concat-map@0.0.1 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/concat-map
+14 error extraneous: concat-stream@1.5.1 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/concat-stream
+14 error extraneous: readable-stream@2.0.6 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/concat-stream/node_modules/readable-stream
+14 error extraneous: core-util-is@1.0.2 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/core-util-is
+14 error extraneous: csrf@3.0.3 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/csrf
+14 error extraneous: d@0.1.1 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/d
+14 error extraneous: debug@2.2.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/debug
+14 error extraneous: deep-is@0.1.3 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/deep-is
+14 error extraneous: del@2.2.1 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/del
+14 error extraneous: doctrine@1.2.2 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/doctrine
+14 error extraneous: esutils@1.1.6 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/doctrine/node_modules/esutils
+14 error extraneous: es5-ext@0.10.12 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/es5-ext
+14 error extraneous: es6-iterator@2.0.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/es6-iterator
+14 error extraneous: es6-map@0.1.4 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/es6-map
+14 error extraneous: es6-set@0.1.4 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/es6-set
+14 error extraneous: es6-symbol@3.1.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/es6-symbol
+14 error extraneous: es6-weak-map@2.0.1 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/es6-weak-map
+14 error extraneous: escape-string-regexp@1.0.5 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/escape-string-regexp
+14 error extraneous: escope@3.6.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/escope
+14 error extraneous: eslint@3.2.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/eslint
+14 error extraneous: eslint-config-airbnb@6.2.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/eslint-config-airbnb
+14 error peer invalid: eslint@^2.4.0, required by eslint-config-airbnb@6.2.0
+14 error peer invalid: eslint-plugin-react@^4.2.3, required by eslint-config-airbnb@6.2.0
+14 error extraneous: eslint-config-rtablada@2.0.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/eslint-config-rtablada
+14 error extraneous: espree@3.1.7 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/espree
+14 error extraneous: acorn@3.3.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/espree/node_modules/acorn
+14 error extraneous: esprima@2.7.2 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/esprima
+14 error extraneous: esrecurse@4.1.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/esrecurse
+14 error extraneous: estraverse@4.1.1 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/esrecurse/node_modules/estraverse
+14 error extraneous: estraverse@4.2.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/estraverse
+14 error extraneous: esutils@2.0.2 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/esutils
+14 error extraneous: event-emitter@0.3.4 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/event-emitter
+14 error extraneous: exit-hook@1.1.1 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/exit-hook
+14 error extraneous: fast-levenshtein@1.1.4 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/fast-levenshtein
+14 error extraneous: figures@1.7.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/figures
+14 error extraneous: file-entry-cache@1.2.4 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/file-entry-cache
+14 error extraneous: flat-cache@1.0.10 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/flat-cache
+14 error extraneous: formidable@1.0.17 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/formidable
+14 error extraneous: fs.realpath@1.0.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/fs.realpath
+14 error extraneous: generate-function@2.0.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/generate-function
+14 error extraneous: generate-object-property@1.2.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/generate-object-property
+14 error extraneous: glob@7.0.5 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/glob
+14 error extraneous: globals@9.9.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/globals
+14 error extraneous: globby@5.0.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/globby
+14 error extraneous: graceful-fs@4.1.5 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/graceful-fs
+14 error extraneous: has-ansi@2.0.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/has-ansi
+14 error extraneous: iconv-lite@0.4.13 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/iconv-lite
+14 error extraneous: ignore@3.1.3 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/ignore
+14 error extraneous: imurmurhash@0.1.4 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/imurmurhash
+14 error extraneous: inflation@2.0.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/inflation
+14 error extraneous: inflight@1.0.5 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/inflight
+14 error extraneous: inherits@2.0.1 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/inherits
+14 error extraneous: inquirer@0.12.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/inquirer
+14 error extraneous: is-fullwidth-code-point@1.0.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/is-fullwidth-code-point
+14 error extraneous: is-my-json-valid@2.13.1 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/is-my-json-valid
+14 error extraneous: is-path-cwd@1.0.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/is-path-cwd
+14 error extraneous: is-path-in-cwd@1.0.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/is-path-in-cwd
+14 error extraneous: is-path-inside@1.0.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/is-path-inside
+14 error extraneous: is-property@1.0.2 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/is-property
+14 error extraneous: is-resolvable@1.0.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/is-resolvable
+14 error extraneous: isarray@1.0.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/isarray
+14 error extraneous: js-yaml@3.6.1 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/js-yaml
+14 error extraneous: json-stable-stringify@1.0.1 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/json-stable-stringify
+14 error extraneous: jsonify@0.0.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/jsonify
+14 error extraneous: jsonpointer@2.0.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/jsonpointer
+14 error extraneous: levn@0.3.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/levn
+14 error extraneous: lodash@4.14.1 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/lodash
+14 error extraneous: media-typer@0.3.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/media-typer
+14 error extraneous: mime-db@1.23.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/mime-db
+14 error extraneous: mime-types@2.1.11 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/mime-types
+14 error extraneous: minimatch@3.0.2 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/minimatch
+14 error extraneous: minimist@0.0.8 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/minimist
+14 error extraneous: mkdirp@0.5.1 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/mkdirp
+14 error extraneous: ms@0.7.1 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/ms
+14 error extraneous: mute-stream@0.0.5 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/mute-stream
+14 error extraneous: node-csp@1.0.1 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/node-csp
+14 error extraneous: node-guard@1.0.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/node-guard
+14 error extraneous: node-uuid@1.4.7 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/node-uuid
+14 error extraneous: number-is-nan@1.0.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/number-is-nan
+14 error extraneous: object-assign@4.1.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/object-assign
+14 error extraneous: once@1.3.3 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/once
+14 error extraneous: onetime@1.1.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/onetime
+14 error extraneous: optionator@0.8.1 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/optionator
+14 error extraneous: os-homedir@1.0.1 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/os-homedir
+14 error extraneous: parent-require@1.0.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/parent-require
+14 error extraneous: path-is-absolute@1.0.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/path-is-absolute
+14 error extraneous: path-is-inside@1.0.1 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/path-is-inside
+14 error extraneous: pify@2.3.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/pify
+14 error extraneous: pinkie@2.0.4 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/pinkie
+14 error extraneous: pinkie-promise@2.0.1 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/pinkie-promise
+14 error extraneous: platform@1.3.1 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/platform
+14 error extraneous: pluralize@1.2.1 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/pluralize
+14 error extraneous: prelude-ls@1.1.2 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/prelude-ls
+14 error extraneous: process-nextick-args@1.0.7 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/process-nextick-args
+14 error extraneous: progress@1.1.8 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/progress
+14 error extraneous: qs@4.0.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/qs
+14 error extraneous: random-bytes@1.0.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/random-bytes
+14 error extraneous: raw-body@2.1.7 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/raw-body
+14 error extraneous: read-json-sync@1.1.1 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/read-json-sync
+14 error extraneous: readline2@1.0.1 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/readline2
+14 error extraneous: require-uncached@1.0.2 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/require-uncached
+14 error extraneous: resolve-from@1.0.1 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/resolve-from
+14 error extraneous: restore-cursor@1.0.1 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/restore-cursor
+14 error extraneous: rimraf@2.5.4 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/rimraf
+14 error extraneous: rndm@1.2.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/rndm
+14 error extraneous: run-async@0.1.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/run-async
+14 error extraneous: rx-lite@3.1.2 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/rx-lite
+14 error extraneous: shelljs@0.6.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/shelljs
+14 error extraneous: slice-ansi@0.0.4 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/slice-ansi
+14 error extraneous: sprintf-js@1.0.3 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/sprintf-js
+14 error extraneous: string_decoder@0.10.31 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/string_decoder
+14 error extraneous: string-width@1.0.1 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/string-width
+14 error extraneous: strip-ansi@3.0.1 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/strip-ansi
+14 error extraneous: strip-bom@3.0.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/strip-bom
+14 error extraneous: strip-json-comments@1.0.4 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/strip-json-comments
+14 error extraneous: supports-color@2.0.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/supports-color
+14 error extraneous: table@3.7.8 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/table
+14 error extraneous: bluebird@3.4.1 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/table/node_modules/bluebird
+14 error extraneous: text-table@0.2.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/text-table
+14 error extraneous: through@2.3.8 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/through
+14 error extraneous: tryit@1.0.2 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/tryit
+14 error extraneous: tsscmp@1.0.5 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/tsscmp
+14 error extraneous: tv4@1.2.7 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/tv4
+14 error extraneous: type-check@0.3.2 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/type-check
+14 error extraneous: type-is@1.6.13 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/type-is
+14 error extraneous: typedarray@0.0.6 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/typedarray
+14 error extraneous: uid-safe@2.1.1 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/uid-safe
+14 error extraneous: unpipe@1.0.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/unpipe
+14 error extraneous: user-home@2.0.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/user-home
+14 error extraneous: util-deprecate@1.0.2 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/util-deprecate
+14 error extraneous: wordwrap@1.0.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/wordwrap
+14 error extraneous: wrappy@1.0.2 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/wrappy
+14 error extraneous: write@0.2.1 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/write
+14 error extraneous: xregexp@3.1.1 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/xregexp
+14 error extraneous: xtend@4.0.1 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/adonis-jsonapi/node_modules/xtend
+14 error extraneous: inflected@1.1.7 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/inflected
+14 error extraneous: jsonapi-serializer@3.3.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/jsonapi-serializer
+14 error extraneous: lodash@3.10.1 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/jsonapi-serializer/node_modules/lodash
+14 error extraneous: lodash.keysin@4.2.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/lodash.keysin
+14 error extraneous: lodash.mapkeys@4.6.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/lodash.mapkeys
+14 error extraneous: lodash.pick@4.4.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/lodash.pick
+14 error extraneous: sqlite3@3.1.4 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3
+14 error extraneous: abbrev@1.0.7 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/abbrev
+14 error extraneous: ansi@0.3.1 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/ansi
+14 error extraneous: ansi-regex@2.0.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/ansi-regex
+14 error extraneous: ansi-styles@2.2.1 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/ansi-styles
+14 error extraneous: are-we-there-yet@1.1.2 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/are-we-there-yet
+14 error extraneous: asn1@0.2.3 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/asn1
+14 error extraneous: assert-plus@0.2.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/assert-plus
+14 error extraneous: async@1.5.2 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/async
+14 error extraneous: aws-sign2@0.6.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/aws-sign2
+14 error extraneous: aws4@1.4.1 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/aws4
+14 error extraneous: balanced-match@0.4.1 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/balanced-match
+14 error extraneous: bl@1.1.2 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/bl
+14 error extraneous: readable-stream@2.0.6 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/bl/node_modules/readable-stream
+14 error extraneous: block-stream@0.0.9 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/block-stream
+14 error extraneous: boom@2.10.1 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/boom
+14 error extraneous: brace-expansion@1.1.4 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/brace-expansion
+14 error extraneous: caseless@0.11.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/caseless
+14 error extraneous: chalk@1.1.3 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/chalk
+14 error extraneous: combined-stream@1.0.5 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/combined-stream
+14 error extraneous: commander@2.9.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/commander
+14 error extraneous: concat-map@0.0.1 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/concat-map
+14 error extraneous: core-util-is@1.0.2 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/core-util-is
+14 error extraneous: cryptiles@2.0.5 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/cryptiles
+14 error extraneous: dashdash@1.13.1 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/dashdash
+14 error extraneous: assert-plus@1.0.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/dashdash/node_modules/assert-plus
+14 error extraneous: debug@2.2.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/debug
+14 error extraneous: deep-extend@0.4.1 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/deep-extend
+14 error extraneous: delayed-stream@1.0.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/delayed-stream
+14 error extraneous: delegates@1.0.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/delegates
+14 error extraneous: ecc-jsbn@0.1.1 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/ecc-jsbn
+14 error extraneous: escape-string-regexp@1.0.5 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/escape-string-regexp
+14 error extraneous: extend@3.0.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/extend
+14 error extraneous: extsprintf@1.0.2 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/extsprintf
+14 error extraneous: forever-agent@0.6.1 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/forever-agent
+14 error extraneous: form-data@1.0.0-rc4 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/form-data
+14 error extraneous: fstream@1.0.9 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/fstream
+14 error extraneous: fstream-ignore@1.0.4 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/fstream-ignore
+14 error extraneous: gauge@1.2.7 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/gauge
+14 error extraneous: generate-function@2.0.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/generate-function
+14 error extraneous: generate-object-property@1.2.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/generate-object-property
+14 error extraneous: getpass@0.1.6 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/getpass
+14 error extraneous: assert-plus@1.0.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/getpass/node_modules/assert-plus
+14 error extraneous: glob@7.0.3 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/glob
+14 error extraneous: graceful-fs@4.1.4 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/graceful-fs
+14 error extraneous: graceful-readlink@1.0.1 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/graceful-readlink
+14 error extraneous: har-validator@2.0.6 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/har-validator
+14 error extraneous: has-ansi@2.0.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/has-ansi
+14 error extraneous: has-unicode@2.0.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/has-unicode
+14 error extraneous: hawk@3.1.3 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/hawk
+14 error extraneous: hoek@2.16.3 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/hoek
+14 error extraneous: http-signature@1.1.1 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/http-signature
+14 error extraneous: inflight@1.0.4 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/inflight
+14 error extraneous: inherits@2.0.1 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/inherits
+14 error extraneous: ini@1.3.4 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/ini
+14 error extraneous: is-my-json-valid@2.13.1 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/is-my-json-valid
+14 error extraneous: is-property@1.0.2 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/is-property
+14 error extraneous: is-typedarray@1.0.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/is-typedarray
+14 error extraneous: isarray@1.0.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/isarray
+14 error extraneous: isstream@0.1.2 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/isstream
+14 error extraneous: jodid25519@1.0.2 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/jodid25519
+14 error extraneous: jsbn@0.1.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/jsbn
+14 error extraneous: json-schema@0.2.2 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/json-schema
+14 error extraneous: json-stringify-safe@5.0.1 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/json-stringify-safe
+14 error extraneous: jsonpointer@2.0.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/jsonpointer
+14 error extraneous: jsprim@1.2.2 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/jsprim
+14 error extraneous: lodash._baseslice@4.0.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/lodash._baseslice
+14 error extraneous: lodash._basetostring@4.12.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/lodash._basetostring
+14 error extraneous: lodash.pad@4.4.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/lodash.pad
+14 error extraneous: lodash.padend@4.5.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/lodash.padend
+14 error extraneous: lodash.padstart@4.5.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/lodash.padstart
+14 error extraneous: lodash.tostring@4.1.3 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/lodash.tostring
+14 error extraneous: mime-db@1.23.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/mime-db
+14 error extraneous: mime-types@2.1.11 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/mime-types
+14 error extraneous: minimatch@3.0.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/minimatch
+14 error extraneous: minimist@0.0.8 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/minimist
+14 error extraneous: mkdirp@0.5.1 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/mkdirp
+14 error extraneous: ms@0.7.1 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/ms
+14 error extraneous: nan@2.3.5 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/nan
+14 error extraneous: node-pre-gyp@0.6.28 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/node-pre-gyp
+14 error extraneous: node-uuid@1.4.7 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/node-uuid
+14 error extraneous: nopt@3.0.6 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/nopt
+14 error extraneous: npmlog@2.0.3 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/npmlog
+14 error extraneous: oauth-sign@0.8.2 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/oauth-sign
+14 error extraneous: once@1.3.3 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/once
+14 error extraneous: path-is-absolute@1.0.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/path-is-absolute
+14 error extraneous: pinkie@2.0.4 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/pinkie
+14 error extraneous: pinkie-promise@2.0.1 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/pinkie-promise
+14 error extraneous: process-nextick-args@1.0.7 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/process-nextick-args
+14 error extraneous: qs@6.1.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/qs
+14 error extraneous: rc@1.1.6 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/rc
+14 error extraneous: minimist@1.2.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/rc/node_modules/minimist
+14 error extraneous: readable-stream@2.1.2 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/readable-stream
+14 error extraneous: request@2.72.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/request
+14 error extraneous: rimraf@2.5.2 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/rimraf
+14 error extraneous: semver@5.1.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/semver
+14 error extraneous: sntp@1.0.9 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/sntp
+14 error extraneous: sshpk@1.8.3 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/sshpk
+14 error extraneous: assert-plus@1.0.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/sshpk/node_modules/assert-plus
+14 error extraneous: string_decoder@0.10.31 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/string_decoder
+14 error extraneous: stringstream@0.0.5 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/stringstream
+14 error extraneous: strip-ansi@3.0.1 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/strip-ansi
+14 error extraneous: strip-json-comments@1.0.4 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/strip-json-comments
+14 error extraneous: supports-color@2.0.0 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/supports-color
+14 error extraneous: tar@2.2.1 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/tar
+14 error extraneous: tar-pack@3.1.3 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/tar-pack
+14 error extraneous: readable-stream@2.0.6 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/tar-pack/node_modules/readable-stream
+14 error extraneous: tough-cookie@2.2.2 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/tough-cookie
+14 error extraneous: tunnel-agent@0.4.3 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/tunnel-agent
+14 error extraneous: tweetnacl@0.13.3 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/tweetnacl
+14 error extraneous: uid-number@0.0.6 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/uid-number
+14 error extraneous: util-deprecate@1.0.2 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/util-deprecate
+14 error extraneous: verror@1.3.6 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/verror
+14 error extraneous: wrappy@1.0.1 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/wrappy
+14 error extraneous: xtend@4.0.1 /Users/ryan/IronYard/june/final-projects/parent-api/node_modules/sqlite3/node_modules/xtend
+15 error If you need help, you may report this error at:
+15 error     <https://github.com/npm/npm/issues>
+16 verbose exit [ 1, true ]
