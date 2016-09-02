@@ -24,10 +24,10 @@ class ProfileController {
     if (typeFilter) {
       const profiles = yield Profile.with('user', 'children', 'ratings', 'likes')
         .scope('ratings', (query) => {
-          query.where('ratings.user_id', request.authUser.id);
+          query.where('ratings.user_id', request.currentUser.id);
         })
         .scope('likes', (query) => {
-          query.where('likes.user_id', request.authUser.id);
+          query.where('likes.user_id', request.currentUser.id);
         })
         .join('users', 'users.id', 'profiles.user_id')
         .where('users.account_type', typeFilter)
@@ -39,10 +39,10 @@ class ProfileController {
 
     const profiles = yield Profile.with('user', 'children', 'ratings', 'likes')
       .scope('ratings', (query) => {
-        query.where('ratings.user_id', request.authUser.id);
+        query.where('ratings.user_id', request.currentUser.id);
       })
       .scope('likes', (query) => {
-        query.where('likes.user_id', request.authUser.id);
+        query.where('likes.user_id', request.currentUser.id);
       })
       .fetch();
 
@@ -52,7 +52,7 @@ class ProfileController {
   * store(request, response) {
     const input = request.jsonApi.getAttributesSnakeCase(attributes);
     const foreignKeys = {
-      user_id: request.authUser.id,
+      user_id: request.currentUser.id,
     };
     const profile = yield Profile.create(Object.assign({}, input, foreignKeys));
 
@@ -63,10 +63,10 @@ class ProfileController {
     const id = request.param('id');
     const profile = yield Profile.with('user', 'children', 'ratings', 'likes')
       .scope('ratings', (query) => {
-        query.where('ratings.user_id', request.authUser.id);
+        query.where('ratings.user_id', request.currentUser.id);
       })
       .scope('likes', (query) => {
-        query.where('likes.user_id', request.authUser.id);
+        query.where('likes.user_id', request.currentUser.id);
       })
       .where({ id })
       .firstOrFail();
@@ -83,10 +83,10 @@ class ProfileController {
     const id = request.param('id');
     const profile = yield Profile.with('user', 'children', 'ratings', 'likes')
       .scope('ratings', (query) => {
-        query.where('ratings.user_id', request.authUser.id);
+        query.where('ratings.user_id', request.currentUser.id);
       })
       .scope('likes', (query) => {
-        query.where('likes.user_id', request.authUser.id);
+        query.where('likes.user_id', request.currentUser.id);
       })
       .where({ id })
       .firstOrFail();
@@ -132,10 +132,10 @@ class ProfileController {
 
     const profile = yield Profile.with('user', 'children', 'ratings', 'likes')
       .scope('ratings', (query) => {
-        query.where('ratings.user_id', request.authUser.id);
+        query.where('ratings.user_id', request.currentUser.id);
       })
       .scope('likes', (query) => {
-        query.where('likes.user_id', request.authUser.id);
+        query.where('likes.user_id', request.currentUser.id);
       })
       .where({ id })
       .firstOrFail();
