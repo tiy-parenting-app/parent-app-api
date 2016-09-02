@@ -2,6 +2,7 @@
 'use strict';
 
 const Message = use('App/Model/Message');
+const Participant = use('App/Model/Participant');
 const Event = use('Event');
 const attributes = ['text'];
 
@@ -15,9 +16,12 @@ class MessageController {
 
   * store(request, response) {
     const input = request.jsonApi.getAttributesSnakeCase(attributes);
+    const conversation_id = request.input('data.relationships.conversation.data.id');
+    const participant = yield Participant.find({ user_id, conversation_id });
+
     const foreignKeys = {
-      participant_id: request.authUser.id,
-      conversation_id: request.input('data.relationships.conversation.data.id'),
+      participant_id: participant.id,
+      conversation_id,
     };
     const message = yield Message.create(Object.assign({}, input, foreignKeys));
     yield message.related('conversation', 'participant').load();
@@ -38,9 +42,12 @@ class MessageController {
     request.jsonApi.assertId(id);
 
     const input = request.jsonApi.getAttributesSnakeCase(attributes);
+    const conversation_id = request.input('data.relationships.conversation.data.id');
+    const participant = yield Participant.find({ user_id, conversation_id });
+
     const foreignKeys = {
-      participant_id: participant,
-      conversation_id: conversation,
+      participant_id: participant.id,
+      conversation_id,
     };
 
     const message = yield Message.with('participant', 'conversation').where({ id }).firstOrFail();
