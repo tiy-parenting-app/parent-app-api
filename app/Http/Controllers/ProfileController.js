@@ -27,7 +27,7 @@ class ProfileController {
           query.where('ratings.user_id', request.authUser.id);
         })
         .scope('likes', (query) => {
-          query.where('like.user_id', request.authUser.id);
+          query.where('likes.user_id', request.authUser.id);
         })
         .join('users', 'users.id', 'profiles.user_id')
         .where('users.account_type', typeFilter)
@@ -42,7 +42,7 @@ class ProfileController {
         query.where('ratings.user_id', request.authUser.id);
       })
       .scope('likes', (query) => {
-        query.where('like.user_id', request.authUser.id);
+        query.where('likes.user_id', request.authUser.id);
       })
       .fetch();
 
@@ -66,7 +66,7 @@ class ProfileController {
         query.where('ratings.user_id', request.authUser.id);
       })
       .scope('likes', (query) => {
-        query.where('like.user_id', request.authUser.id);
+        query.where('likes.user_id', request.authUser.id);
       })
       .where({ id })
       .firstOrFail();
@@ -86,7 +86,7 @@ class ProfileController {
         query.where('ratings.user_id', request.authUser.id);
       })
       .scope('likes', (query) => {
-        query.where('like.user_id', request.authUser.id);
+        query.where('likes.user_id', request.authUser.id);
       })
       .where({ id })
       .firstOrFail();
@@ -135,7 +135,7 @@ class ProfileController {
         query.where('ratings.user_id', request.authUser.id);
       })
       .scope('likes', (query) => {
-        query.where('like.user_id', request.authUser.id);
+        query.where('likes.user_id', request.authUser.id);
       })
       .where({ id })
       .firstOrFail();
