@@ -57,6 +57,8 @@ Route.resource('/participants', 'ParticipantController')
 Route.resource('/messages', 'MessageController')
   .except(['create', 'edit']).middleware('auth');
 
+Route.get('/images/:id.:extension', 'ImageController.show');
+
 Route.resource('/ratings', 'RatingController')
   .except(['create', 'edit']).middleware('auth');
 

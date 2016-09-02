@@ -5,6 +5,7 @@ class Profile extends JsonApiView {
     return [
       'is_parent',
       'user_pic_url',
+      'user_pic_extension',
       'first_name',
       'last_name',
       'user_blurb',
