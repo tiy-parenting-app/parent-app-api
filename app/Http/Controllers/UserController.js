@@ -15,7 +15,7 @@ class UserController {
           query.where('ratings.user_id', request.authUser.id);
         })
         .scope('profile.likes', (query) => {
-          query.where('like.user_id', request.authUser.id);
+          query.where('likes.user_id', request.authUser.id);
         })
         .where('users.account_type', typeFilter)
         .fetch();
